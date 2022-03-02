@@ -1,13 +1,17 @@
 
 //construção do deck
 let imgs = [
-    [1, "../img/amigos.svg"],
-    [2, "../img/projetar.svg"],
-    [3, "../img/poder.svg"],
-    [4, "../img/harmonia.svg"],
+    [1, "../img/1.png"],
+    [1, "../img/1.1.png"],
+    [2, "../img/2.png"],
+    [2, "../img/2.2.png"],
+    [3, "../img/3.png"],
+    [3, "../img/3.3.png"],
+    [4, "../img/4.png"],
+    [4, "../img/4.4.png"],
 ]
 let cardImgBack = ["../img/back.svg"]
-let deck = [...imgs, ...imgs]
+let deck = [...imgs]
 
 //criação das variáveis
 let newLife
@@ -34,6 +38,7 @@ function shuffleCards() {
     return deckSuffled
 }
 shuffleCards()
+console.log(deckSuffled)
 
 //printar as cards no html
 function printCards() {
@@ -45,7 +50,7 @@ function printCards() {
         cardBack.classList.add("back-card")
         cardFront.classList.add("card-no-show")
 
-        cardFront.id = ("card" + [i])
+        cardFront.id = deckSuffled[i][0]
         cardFront.src = deckSuffled[i][1]
         cardBack.src = cardImgBack[0]
 
@@ -75,8 +80,10 @@ removeClick()
 
 function flipCard() {
     let cardImg = this.nextElementSibling
-    let cardSource = cardImg.src
+    let cardSource = cardImg.id
     let cardBack = this
+
+    console.log(cardImg)
 
     //se for a primeira carta
     if (selecionadas.length === 0) {

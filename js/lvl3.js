@@ -1,22 +1,34 @@
 
 //construção do deck
 let imgs = [
-    [1, "../img/amigos.svg"],
-    [2, "../img/projetar.svg"],
-    [3, "../img/poder.svg"],
-    [4, "../img/harmonia.svg"],
-    [5, "../img/caminho.svg"],
-    [6, "../img/criar.svg"],
-    [7, "../img/equipe.svg"],
-    [8, "../img/refletir.svg"],
-    [9, "../img/desafio.svg"],
-    [10, "../img/verdade.svg"],
-    [11, "../img/fe.svg"],
-    [12, "../img/conectar.svg"],
+    [1, "../img/13.png"],
+    [1, "../img/13.13.png"],
+    [2, "../img/14.png"],
+    [2, "../img/14.14.png"],
+    [3, "../img/15.png"],
+    [3, "../img/15.15.png"],
+    [4, "../img/16.png"],
+    [4, "../img/16.16.png"],
+    [5, "../img/17.png"],
+    [5, "../img/17.17.png"],
+    [6, "../img/18.png"],
+    [6, "../img/18.18.png"],
+    [7, "../img/19.png"],
+    [7, "../img/19.19.png"],
+    [8, "../img/20.png"],
+    [8, "../img/20.20.png"],
+    [9, "../img/1.png"],
+    [9, "../img/1.1.png"],
+    [10, "../img/2.png"],
+    [10, "../img/2.2.png"],
+    [11, "../img/3.png"],
+    [11, "../img/3.3.png"],
+    [12, "../img/4.png"],
+    [12, "../img/4.4.png"],
 
 ]
 let cardImgBack = ["../img/back.svg"]
-let deck = [...imgs, ...imgs]
+let deck = [...imgs]
 
 //criação das variáveis
 let newLife
@@ -31,7 +43,7 @@ let showLoose = document.getElementById("loose")
 
 function flipCard() {
     let cardImg = this.nextElementSibling
-    let cardSource = cardImg.src
+    let cardSource = cardImg.id
     let cardBack = this
 
     //se for a primeira carta
@@ -157,15 +169,13 @@ function printCards() {
         cardBack.classList.add("back-card")
         cardFront.classList.add("card-no-show")
 
-        cardFront.id = ("card" + [i])
+        cardFront.id = deckSuffled[i][0]
         cardFront.src = deckSuffled[i][1]
         cardBack.src = cardImgBack[0]
 
         div.appendChild(cardBack)
         div.appendChild(cardFront)
         board.appendChild(div)
-
-
     }
 }
 printCards()

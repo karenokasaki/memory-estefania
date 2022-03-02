@@ -1,17 +1,25 @@
 
 //construção do deck
 let imgs = [
-    [1, "../img/amigos.svg"],
-    [2, "../img/projetar.svg"],
-    [3, "../img/poder.svg"],
-    [4, "../img/harmonia.svg"],
-    [5, "../img/caminho.svg"],
-    [6, "../img/criar.svg"],
-    [7, "../img/equipe.svg"],
-    [8, "../img/refletir.svg"],
+    [1, "../img/5.png"],
+    [1, "../img/5.5.png"],
+    [2, "../img/6.png"],
+    [2, "../img/6.6.png"],
+    [3, "../img/7.png"],
+    [3, "../img/7.7.png"],
+    [4, "../img/8.png"],
+    [4, "../img/8.8.png"],
+    [5, "../img/9.png"],
+    [5, "../img/9.9.png"],
+    [6, "../img/10.png"],
+    [6, "../img/10.10.png"],
+    [7, "../img/11.png"],
+    [7, "../img/11.11.png"],
+    [8, "../img/12.png"],
+    [8, "../img/12.12.png"],
 ]
 let cardImgBack = ["../img/back.svg"]
-let deck = [...imgs, ...imgs]
+let deck = [...imgs]
 
 //criação das variáveis
 let newLife
@@ -49,7 +57,7 @@ function printCards() {
         cardBack.classList.add("back-card")
         cardFront.classList.add("card-no-show")
 
-        cardFront.id = ("card" + [i])
+        cardFront.id = deckSuffled[i][0]
         cardFront.src = deckSuffled[i][1]
         cardBack.src = cardImgBack[0]
 
@@ -79,7 +87,7 @@ removeClick()
 
 function flipCard() {
     let cardImg = this.nextElementSibling
-    let cardSource = cardImg.src
+    let cardSource = cardImg.id
     let cardBack = this
 
     //se for a primeira carta
