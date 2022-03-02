@@ -1,0 +1,10 @@
+<svg width="236" height="104" viewBox="0 0 236 104" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="equipe">
+<rect id="template-card" width="236" height="104" rx="15" fill="#FEB72B"/>
+<path id="Vector 12" d="M64 19H171.5" stroke="black" stroke-width="4"/>
+<path id="Vector 16" d="M64 84H171.5" stroke="black" stroke-width="4"/>
+<path id="Vector 13" d="M90 19V84" stroke="black" stroke-width="4"/>
+<path id="Vector 14" d="M118 19V84" stroke="black" stroke-width="4"/>
+<path id="Vector 15" d="M144 19V84" stroke="black" stroke-width="4"/>
+</g>
+</svg>

@@ -1,0 +1,135 @@
+.home-page {
+    position: relative;
+    width: 1280px;
+    height: 620px;
+  
+    background: white;
+  }
+  
+  .title-home-page {
+    position: absolute;
+    width: 1280px;
+    height: 100px;
+    left: 0px;
+    top: 0px;
+    background: #eccd2d;
+    box-shadow: -11px 11px 0px #b1b1b1, 11px -11px 0px #ffffff;
+  }
+  
+  .game-name-text {
+    position: absolute;
+    width: 1280px;
+    height: 100px;
+    left: 0px;
+    top: 0px;
+  
+    font-family: "Raleway", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 71.1111px;
+    line-height: 83px;
+    display: flex;
+    align-items: flex-end;
+    text-align: center;
+    justify-content: space-around;
+  
+    color: #ffffff;
+    box-shadow: 0px 11px 0px rgba(0, 0, 0, 0.032),
+      0px 18.1px 0px rgba(0, 0, 0, 0.048), 0px 25px 0px rgba(0, 0, 0, 0.08);
+  
+    text-shadow: 3px 2px 0px rgba(0, 0, 0, 0.22);
+  }
+  
+  .how-to-play {
+    position: absolute;
+    width: 753.76px;
+    height: 162.02px;
+    left: 245px;
+    top: 187px;
+    background: #ffffff;
+    border-radius: 40px;
+    border-radius: 37px;
+    background: rgba(255, 182, 193, 0.863);
+    box-shadow: -11px 11px 0px #888888, 11px -11px 0px #ffffff;
+    opacity: 1;
+    transition: 0.3s;
+  }
+  
+  .how-to-text {
+    width: 753.76px;
+    height: 162.02px;
+    left: 245px;
+    top: 252px;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26.4167px;
+    line-height: 31px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+    color: rgba(0, 0, 0, 0.4);
+    border-radius: 40px;
+  }
+  
+  .start-btn {
+    position: absolute;
+    width: 383px;
+    height: 123.77px;
+    left: 880px;
+    top: 290px;
+    border: none;
+  
+    background: #48e445;
+  
+    border-radius: 15px;
+    box-shadow: -11px 11px 0px #b1b1b1, 11px -11px 0px #ffffff;
+    opacity: 0.7;
+  }
+  
+  .start-btn:hover {
+    opacity: 1;
+  }
+  
+  .start-txt {
+    position: absolute;
+    width: 383px;
+    height: 124px;
+    left: 0px;
+    top: 0px;
+  
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 55.009px;
+    line-height: 64px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #497e2f;
+    border-color: white;
+  
+    opacity: 1;
+    transition: 0.3s;
+  }
+  
+  .start-txt:hover {
+    opacity: 1;
+    color: white;
+  }
+  
+  .how-to-play:hover {
+    opacity: 0.5;
+    background-color: red;
+  }
+  
+  .how-to-text:hover {
+    color: white;
+  }
+  
+  .sig {
+      display: flex;
+  }
